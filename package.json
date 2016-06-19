@@ -1,0 +1,36 @@
+{
+  "name": "arduino-node-sample",
+  "version": "1.0.0",
+  "description": "Test to turn off/on a led with Arduino and Javascript",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinccbsg/Arduino-node-sample.git"
+  },
+  "keywords": [
+    "arduino",
+    "node",
+    "javascript",
+    "angular",
+    "jhonny-five"
+  ],
+  "author": "Kevin Julián Martínez Escobar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinccbsg/Arduino-node-sample/issues"
+  },
+  "homepage": "https://github.com/kevinccbsg/Arduino-node-sample#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "johnny-five": "^0.9.56",
+    "socket.io": "^1.4.6",
+    "socket.io-client": "^1.4.6"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1"
+  }
+}
