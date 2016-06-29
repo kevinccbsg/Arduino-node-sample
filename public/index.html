@@ -10,6 +10,14 @@
 	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 	<script>
 		var socket = io();
+		var botonOne = document.getElementById('turnOnButton');
+		var botonTwo = document.getElementById('turnOffButton');
+		botonOne.addEventListener('click', function (ev) {
+			socket.emit('led:on',"on");
+		});
+		botonTwo.addEventListener('click', function (ev) {
+			socket.emit('led:off',"off");
+		})
 	</script>
 </body>
 </html>
