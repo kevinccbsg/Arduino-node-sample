@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var httServer = require('http').createServer(app);
 var five = require('johnny-five');
-var io = require('socket.io');
+var io = require('socket.io')(httServer);
 
 var port = process.env.PORT || 3000;
 
@@ -39,6 +39,5 @@ io.on('connection', function (socket) {
     socket.on('led:off', function (data) {
         led.off();
         console.log('LED OFF RECEIVED');
-
     });
 });
